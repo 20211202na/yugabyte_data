@@ -295,10 +295,10 @@ def exe(list_of_ops, client_id):
                             op_num = op_num + 1
                         else:
                             print("unknown wrong type op.")
-                    result_ops.append(temp_tx_op)
-                    count += 1
         except Exception as e:
             continue
+        result_ops.append(temp_tx_op)
+        count += 1
 
     client_conn.close()
 
